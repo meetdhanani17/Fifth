@@ -2,7 +2,7 @@ version: '3'
  
 services:
   db:
-    image: mysql:5.7
+    image: mysql:8.0.32
     container_name: db
     environment:
       MYSQL_ROOT_PASSWORD: root
@@ -25,6 +25,7 @@ services:
       CLOUDBEAVER_SERVER_DATABASE_URL: jdbc:mysql://db:6033/rdx
       CLOUDBEAVER_SERVER_DATABASE_USERNAME: root
       CLOUDBEAVER_SERVER_DATABASE_PASSWORD: root
+
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
     container_name: pma
